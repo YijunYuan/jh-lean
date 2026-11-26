@@ -1,0 +1,20 @@
+name = "jh_sqrt"
+version = "0.1.0"
+license = "Apache-2.0"
+defaultTargets = ["JH"]
+
+[leanOptions]
+warningAsError = true
+pp.unicode.fun = true # pretty-prints `fun a ↦ b`
+relaxedAutoImplicit = false
+weak.linter.mathlibStandardSet = true
+maxSynthPendingDepth = 3
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+git = "https://github.com/leanprover-community/mathlib4"
+rev = "v4.36.0"
+
+[[lean_lib]]
+name = "JH"
